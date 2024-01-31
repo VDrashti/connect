@@ -230,7 +230,7 @@ if __name__ == '__main__':
         init_session()
     e1,e,e2=st.columns([7,1,92])
     images = []
-    for file in ["Overview-selected.png", "Reco-selected.png","Export-selected.png"]:
+    for file in ["Overview_img.png", "Revocations_img.png","Reports_img.png"]:
         with open(file, "rb") as image:
             encoded = base64.b64encode(image.read()).decode()
             images.append(f"data:image/jpeg;base64,{encoded}")
